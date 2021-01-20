@@ -11,13 +11,11 @@
 		<!-- JQuery -->
   		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
-		<!-- Slider -->
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
-  		<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+  		<link rel="stylesheet" href="js/jquery-ui/jquery-ui.min.css" />
+		<link rel="stylesheet" href="js/jquery-ui/jquery-ui.structure.min.css" />
+		<link rel="stylesheet" href="js/jquery-ui/jquery-ui.theme.min.css" />
 
-  		<!-- Moment JS -->
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.0/moment.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.0/locale/es.js"></script>
+		<script type="text/javascript" src="js/jquery-ui/jquery-ui.min.js"></script>
 
   		<!-- Mis Scripts -->
   		<script type="text/javascript" src="js/main.js"></script>
@@ -49,32 +47,37 @@
 				</nav>	
 			</header>
 
-			<!-- Slider -->
-			<div id="slider">
-				<div class="bxslider">
-  					<div><img src="img/hojas.jpg" title="Hojas"></div>
- 				 	<div><img src="img/rojo.jpg" title="The long and winding road"></div>
- 	    			<div><img src="img/cielo.jpg" title="Happy trees"></div>
-				</div>
-				
-			</div>
-
 			<!-- Contenido -->
 			<section id="content">
-				<div id="posts">
-					<!-- Cargar posts desde JSON -->
-					<article class="post">
-						<h2>Prueba de título</h2>
-						<span>Fecha de publicación</span>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<div id="box">
+					<!-- Cargar acordeón -->
+					<h2>Sobre mí</h2>
+					<div id="acordeon">
+						<h3>¿Quiénes somos?</h3>
+						<div>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua.
+							</p>
+						</div>
 
-						<a href="#" class="button-more">Leer más</a>
-					</article>
+						<h3>Nuestros servicios</h3>
+						<div>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua.
+							</p>
+						</div>
+
+						<h3>Nuestros clientes</h3>
+						<div>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua.
+							</p>
+						</div>
+					</div>
+
 					
 				</div>
 				<aside id="sidebar">

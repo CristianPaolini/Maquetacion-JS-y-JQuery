@@ -1,7 +1,7 @@
-
+$(document).ready(function(){
 // Slider
 
-$(document).ready(function(){
+if (window.location.href.indexOf('index') > -1) {
 $('.bxslider').bxSlider({
     mode: 'fade',
     captions: true,
@@ -10,34 +10,38 @@ $('.bxslider').bxSlider({
     pager: true
   });
 
+}
+
+
 // Post
-var posts = [
-	{
-		title: 'Prueba de título 1',
-		date: 'Publicado el día ' + moment().date() + " de " + moment().format("MMMM") + " del " + moment().format("YYYY"),
-		content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-	},
-	{
-		title: 'Prueba de título 2',
-		date: 'Publicado el día ' + moment().date() + " de " + moment().format("MMMM") + " del " + moment().format("YYYY"),
-		content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-	},
-	{
-		title: 'Prueba de título 3',
-		date: 'Publicado el día ' + moment().date() + " de " + moment().format("MMMM") + " del " + moment().format("YYYY"),
-		content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-	},
-	{
-		title: 'Prueba de título 4',
-		date: 'Publicado el día ' + moment().date() + " de " + moment().format("MMMM") + " del " + moment().format("YYYY"),
-		content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-	},
-	{
-		title: 'Prueba de título 5',
-		date: 'Publicado el día ' + moment().date() + " de " + moment().format("MMMM") + " del " + moment().format("YYYY"),
-		content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-	},
-];
+if (window.location.href.indexOf('index') > -1) {
+	var posts = [
+		{
+			title: 'Prueba de título 1',
+			date: 'Publicado el día ' + moment().date() + " de " + moment().format("MMMM") + " del " + moment().format("YYYY"),
+			content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+		},
+		{
+			title: 'Prueba de título 2',
+			date: 'Publicado el día ' + moment().date() + " de " + moment().format("MMMM") + " del " + moment().format("YYYY"),
+			content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+		},
+		{
+			title: 'Prueba de título 3',
+			date: 'Publicado el día ' + moment().date() + " de " + moment().format("MMMM") + " del " + moment().format("YYYY"),
+			content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+		},
+		{
+			title: 'Prueba de título 4',
+			date: 'Publicado el día ' + moment().date() + " de " + moment().format("MMMM") + " del " + moment().format("YYYY"),
+			content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+		},
+		{
+			title: 'Prueba de título 5',
+			date: 'Publicado el día ' + moment().date() + " de " + moment().format("MMMM") + " del " + moment().format("YYYY"),
+			content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+		},
+	];
 
 	posts.forEach((item, index) => {
 		var post = `
@@ -53,6 +57,7 @@ var posts = [
 
 		$("#posts").append(post);
 	});
+}
 
 	// Selector de tema
 	var theme = $("#theme");
@@ -104,6 +109,10 @@ $("#login form").submit(function(){
 			location.reload();
 		});
 
+	}
+
+	if (window.location.href.indexOf('about') > -1) {
+		$("#acordeon").accordion();
 	}
 
 });
